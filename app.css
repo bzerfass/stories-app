@@ -1,0 +1,199 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: Roboto, Arial, sans-serif;
+  background: #90b4d2;
+  font-size: 14px;
+}
+
+select {
+    border: 1px solid #777777;
+    border-radius: 2px;
+    background: transparent;
+    width: 200px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    height: 34px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 5px 35px 5px 5px;
+    background: url(http://www.cospender.com/images/grey-arrows-down-2.png) 96% / 15% no-repeat;
+    background-size: 5%;
+    color: #777777;
+}
+
+select:focus {
+    outline:none;
+}
+
+button {
+    background: transparent;
+    border-radius: 2px;
+    border: 1px solid #ccc;
+    color: #777777;
+    padding: 8px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    background: #ccc;
+    color: #FFF;
+}
+
+.app-container {
+    max-width: 750px;
+}
+
+.card {
+    background: #FFF;
+    padding: 10px;
+    margin: 10px;
+	border-radius: 2px;
+	box-sizing: border-box;
+	transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.header-title {
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+.header-subtitle {
+    color: #777777;
+    font-size: 15px;
+}
+
+.question-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.question-item .question-label {
+    align-self: center;
+}
+
+.question-submit {
+    text-align: center;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.score .score-total {
+    display: flex;
+}
+
+.score .score-total-item {
+    padding: 0 10px;
+}
+
+.score .score-total-item.active {
+    border-right: 1px solid #ccc;
+}
+.scale {
+    display: block;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 11px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.scale .scale-item {
+    padding: 10px 0;
+    display: inline-block;;
+    background: #FFF;
+    text-align: center;
+    line-height: 30px;
+}
+
+.scale  .scale-item:first-child {
+    width: 18%;
+    border-radius: 2px 0 0 2px;
+}
+
+.scale .scale-item:last-child {
+    border-radius: 0 2px 2px 0;
+}
+
+.scale .scale-item:nth-child(2) {
+    background:#d9e8c6;
+    width: 15%;
+}
+
+.scale .scale-item:nth-child(3) {
+    background:#cde1b4;
+    width:15%;
+}
+
+.scale .scale-item:nth-child(4) {
+    background:#c0d9a2;
+    width: 15%;
+}
+
+.scale .scale-item:nth-child(5) {
+    background:#b4d290;
+    width: 22%;
+}
+
+.scale .scale-item:nth-child(6) {
+    background: #a8cb7e;
+    width: 15%;
+}
+
+.therapist-selected {
+    padding: 15px;
+    text-align: center;
+}
+
+.therapist-selected  .therapist-selected-heading {
+    font-size: 15px;
+    padding: 5px;
+
+}
+
+.therapist-selected  .therapist-selected-name {
+    font-size: 12px;
+    color: #777777;
+}
+
+@media screen and (max-width: 750px) {
+	.scale-item {
+        display: block;
+        width: 100% !important;
+	}
+    .scale-item:first-child {
+        width: 18%;
+        border-radius: 2px 2px 0 0;
+    }
+    .scale-item:last-child {
+        width: 18%;
+        border-radius: 0 0 2px 2px;
+    }
+}
