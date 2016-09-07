@@ -57,6 +57,10 @@ button:hover {
     color: #FFF;
 }
 
+#root {
+    height: 100%;
+}
+
 .app-container {
     max-width: 750px;
 }
